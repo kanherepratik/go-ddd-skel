@@ -1,0 +1,44 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go workspace file
+go.work
+
+# Output of the go coverage tool
+*.coverprofile
+
+# Dependency directories
+vendor/
+bin/
+pkg/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment files
+.env
+.env.local
+
+# Log files
+*.log
+
+# Build output
+dist/
+build/
+artifacts/
+
+# Test output
+coverage.txt
+profile.out
+
+# Local development files
+tmp/
