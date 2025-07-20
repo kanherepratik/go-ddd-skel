@@ -17,12 +17,19 @@ echo 'export PATH=$PATH:$(go env GOPATH)/bin' >> ~/.zshrc
 source ~/.zshrc
 ```
 
+3. Install go-callvis for architecture visualization:
+
+```bash
+go install github.com/ofabry/go-callvis@latest
+```
+
 ## Usage
 
 ### Initialize a New Project
 
 ```bash
 go-ddd-skel init my-project
+# This will create the project structure, initialize a Go module, and create a basic main.go file
 ```
 
 ### Generate Domain Entities
