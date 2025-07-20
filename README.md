@@ -6,7 +6,7 @@ A command-line tool for generating Go projects following Domain-Driven Design pr
 
 ```bash
 # Install the tool
-go install github.com/prateek/go-ddd-skel@latest
+go install github.com/kanherepratik/go-ddd-skel@latest
 ```
 
 ## Usage
