@@ -1,4 +1,4 @@
-module github.com/prateek/go-ddd-skel
+module github.com/kanherepratik/go-ddd-skel
 
 go 1.21
 

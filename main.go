@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/prateek/go-ddd-skel/cmd"
+	"github.com/kanherepratik/go-ddd-skel/cmd"
 	"github.com/spf13/cobra"
 )
 
