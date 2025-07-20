@@ -81,6 +81,6 @@ type Response struct {
 	fmt.Printf("Successfully created usecase %s in %s\n", usecaseName, usecasePath)
 }
 
-func InitUsecase(rootCmd *cobra.Command) {
+func InitGenUsecase(rootCmd *cobra.Command) {
 	rootCmd.AddCommand(usecaseCmd)
 }

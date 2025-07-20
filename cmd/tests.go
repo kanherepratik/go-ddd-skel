@@ -105,7 +105,7 @@ func isHandler(name string) bool {
 	return err == nil
 }
 
-func InitTests(rootCmd *cobra.Command) {
+func InitGenTests(rootCmd *cobra.Command) {
 	rootCmd.AddCommand(testsCmd)
 	testsCmd.Flags().BoolVarP(&withMocks, "with-mocks", "m", false, "Generate mock implementations")
 }

@@ -4,9 +4,17 @@ A command-line tool for generating Go projects following Domain-Driven Design pr
 
 ## Installation
 
+1. Install the tool globally:
+
 ```bash
-# Install the tool
 go install github.com/kanherepratik/go-ddd-skel@latest
+```
+
+2. Add the Go bin directory to your PATH (if not already added):
+
+```bash
+echo 'export PATH=$PATH:$(go env GOPATH)/bin' >> ~/.zshrc
+source ~/.zshrc
 ```
 
 ## Usage
@@ -17,40 +25,54 @@ go install github.com/kanherepratik/go-ddd-skel@latest
 go-ddd-skel init my-project
 ```
 
-### Generate Domain Components
+### Generate Domain Entities
 
 ```bash
-go-ddd-skel gen domain User
+go-ddd-skel domain User
 ```
 
 ### Generate Use Cases
 
 ```bash
-go-ddd-skel gen usecase CreateUser
+go-ddd-skel usecase CreateUser
 ```
 
 ### Generate Handlers
 
 ```bash
-go-ddd-skel gen handler UserHandler --type http
+go-ddd-skel handler UserHandler
 ```
 
 ### Generate Tests
 
 ```bash
-go-ddd-skel gen tests User
-```
-
-### Generate Documentation
-
-```bash
-go-ddd-skel gen docs --type markdown
+go-ddd-skel tests User
 ```
 
 ### Visualize Architecture
 
 ```bash
-go-ddd-skel graph arch
+go-ddd-skel arch
+```
+
+### Generate Documentation
+
+```bash
+go-ddd-skel docs --type markdown
+```
+
+### Developer Experience Features
+
+```bash
+go-ddd-skel dx lint
+go-ddd-skel dx air
+go-ddd-skel dx telemetry
+```
+
+### Monorepo Support
+
+```bash
+go-ddd-skel monorepo
 ```
 
 ### Manage Plugins
@@ -59,20 +81,6 @@ go-ddd-skel graph arch
 go-ddd-skel plugin install ./my-plugin.so
 go-ddd-skel plugin list
 go-ddd-skel plugin remove my-plugin
-```
-
-### Developer Experience Features
-
-```bash
-go-ddd-skel setup lint
-go-ddd-skel setup air
-go-ddd-skel setup telemetry
-```
-
-### Monorepo Support
-
-```bash
-go-ddd-skel setup monorepo
 ```
 
 ## Features

@@ -68,7 +68,7 @@ func generateOpenAPIDocs() {
 	fmt.Println("OpenAPI documentation generated in docs/")
 }
 
-func InitDocs(rootCmd *cobra.Command) {
+func InitGenDocs(rootCmd *cobra.Command) {
 	rootCmd.AddCommand(docsCmd)
 	docsCmd.Flags().StringVarP(&docType, "type", "t", "markdown", "Documentation type (markdown|openapi)")
 }

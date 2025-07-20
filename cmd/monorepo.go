@@ -61,6 +61,6 @@ func setupMonorepo() {
 	fmt.Println("Monorepo structure created successfully")
 }
 
-func InitMonorepo(rootCmd *cobra.Command) {
+func InitSetupMonorepo(rootCmd *cobra.Command) {
 	rootCmd.AddCommand(monorepoCmd)
 }

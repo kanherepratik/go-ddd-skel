@@ -39,6 +39,6 @@ func generateArchitectureGraph() {
 	fmt.Println("Architecture visualization available at http://localhost:7878")
 }
 
-func InitArch(rootCmd *cobra.Command) {
+func InitGraphArch(rootCmd *cobra.Command) {
 	rootCmd.AddCommand(archCmd)
 }

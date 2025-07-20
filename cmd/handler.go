@@ -96,6 +96,6 @@ func (h *{{.GRPCHandler}}) Handle(ctx context.Context, req *Request) (*Response,
 	fmt.Printf("Successfully created handler %s in %s\n", handlerName, handlerPath)
 }
 
-func InitHandler(rootCmd *cobra.Command) {
+func InitGenHandler(rootCmd *cobra.Command) {
 	rootCmd.AddCommand(handlerCmd)
 }

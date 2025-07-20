@@ -16,15 +16,15 @@ Domain-Driven Design principles with opinionated structure.`,
 
 func main() {
 	cmd.Init(rootCmd)
-	cmd.InitDomain(rootCmd)
-	cmd.InitUsecase(rootCmd)
-	cmd.InitHandler(rootCmd)
-	cmd.InitTests(rootCmd)
-	cmd.InitArch(rootCmd)
-	cmd.InitDocs(rootCmd)
+	cmd.InitGenDomain(rootCmd)
+	cmd.InitGenUsecase(rootCmd)
+	cmd.InitGenHandler(rootCmd)
+	cmd.InitGenTests(rootCmd)
+	cmd.InitGraphArch(rootCmd)
+	cmd.InitGenDocs(rootCmd)
 	cmd.InitPlugin(rootCmd)
-	cmd.InitDX(rootCmd)
-	cmd.InitMonorepo(rootCmd)
+	cmd.InitSetupDX(rootCmd)
+	cmd.InitSetupMonorepo(rootCmd)
 
 	if err := rootCmd.Execute(); err != nil {
 		os.Exit(1)

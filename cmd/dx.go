@@ -113,7 +113,7 @@ func setupTelemetry() {
 	fmt.Println("Telemetry setup complete. Add instrumentation to your code.")
 }
 
-func InitDX(rootCmd *cobra.Command) {
+func InitSetupDX(rootCmd *cobra.Command) {
 	dxCmd.AddCommand(setupLintCmd)
 	dxCmd.AddCommand(setupAirCmd)
 	dxCmd.AddCommand(setupTelemetryCmd)

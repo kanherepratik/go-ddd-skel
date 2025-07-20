@@ -77,6 +77,6 @@ func generateFile(path string, tmpl string, data map[string]string) {
 	}
 }
 
-func InitDomain(rootCmd *cobra.Command) {
+func InitGenDomain(rootCmd *cobra.Command) {
 	rootCmd.AddCommand(domainCmd)
 }
